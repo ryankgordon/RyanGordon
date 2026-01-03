@@ -1,0 +1,79 @@
+/* --- Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Body --- */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #D3D3D3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #1f2937;
+}
+
+/* --- Card --- */
+.container {
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 480px;
+}
+
+/* --- Headings --- */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: black;
+}
+
+/* --- Paragraphs --- */
+p {
+    margin-top: 15px;
+    line-height: 1.5;
+    color: #374151;
+}
+
+/* --- Links --- */
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #3b82f6;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.links a:hover {
+    color: #1e40af;
+}
+
+/* --- Divider --- */
+hr {
+    margin: 25px 0;
+    border: none;
+    height: 1px;
+    background-color: #e5e7eb;
+}
+
+/* --- Visitor --- */
+.visitor {
+    font-size: 0.85rem;
+    color: #6b7280;
+    letter-spacing: 0.03em;
+}
+

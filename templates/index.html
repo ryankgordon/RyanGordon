@@ -1,0 +1,36 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Ryan Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+   <div class="container">
+    <h1>Ryan Gordon</h1>
+    <p class="subtitle">DevOps Engineer💻</p>
+
+    <p>Based in New York, NY.</p>
+
+    <p>
+        This site is a simple portfolio, under construction.  
+        Check out my work in the meantime!
+    </p>
+
+    <div class="links">
+        <a href="https://github.com/ryankgordon" target="_blank">
+ 	 <i class="fab fa-github"></i> GitHub
+</a>
+	<a href="https://linkedin.com/in/ryankigordon/" target="_blank">
+ 	 <i class="fab fa-linkedin"></i> LinkedIn
+</a>
+    </div>
+
+    <hr>
+
+    <p class="visitor">
+        VISITORS: {{ visitors }}
+    </p>
+</div>
+</body>
+
