@@ -10,12 +10,7 @@ def get_db_connection():
 
 def init_db():
     conn = get_db_connection()
-    conn.execute("""
-        CREATE TABLE IF NOT EXISTS counter (
-            id INTEGER PRIMARY KEY,
-            count INTEGER
-        )
-    """)
+    conn.execute("CREATE TABLE IF NOT EXISTS counter (id INTEGER PRIMARY KEY, count INTEGER)")
     cur = conn.execute("SELECT count FROM counter WHERE id = 1")
     if cur.fetchone() is None:
         conn.execute("INSERT INTO counter (id, count) VALUES (1, 0)")
@@ -31,7 +26,11 @@ def home():
     conn.commit()
     conn.close()
     return render_template("index.html", visitors=count)
-    
+
+@app.route("/resume")
+def resume():
+    return render_template("resume.html")
+
 if __name__ == "__main__":
     init_db()
     app.run(host="0.0.0.0", port=5000)
