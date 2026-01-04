@@ -32,6 +32,11 @@ def home():
     conn.close()
     return render_template("index.html", visitors=count)
 
+# NEW ROUTE FOR RESUME
+@app.route("/resume")
+def resume():
+    return render_template("resume.html")
+    
 if __name__ == "__main__":
     init_db()
     app.run(host="0.0.0.0", port=5000)
