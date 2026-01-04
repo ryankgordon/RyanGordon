@@ -31,11 +31,6 @@ def home():
     conn.commit()
     conn.close()
     return render_template("index.html", visitors=count)
-
-# NEW ROUTE FOR RESUME
-@app.route("/resume")
-def resume():
-    return render_template("resume.html")
     
 if __name__ == "__main__":
     init_db()
